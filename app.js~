@@ -9,8 +9,6 @@ var http = require('http');
 //add jade file here
 var routes = require('./routes/index');
 var users = require('./routes/users');
-//3d
-var three = require('./routes/three');
 
 //specify directory for each jade file in here
 var app = express();
