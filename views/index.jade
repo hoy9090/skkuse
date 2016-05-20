@@ -2,71 +2,14 @@ extends layout
 
 block css
 	style.
-		.main-image, .product-list, .community-list {
+		.main-image {
 			padding: 0;
-		}
-		a.carousel-control {
-			padding: 100px 0;
 		}
 
 block content
-	.col-xs-12.main-image
-		img(src="img/header-bg.jpg" width="100%")
-	.col-xs-12.product-list
-		#myCarousel.carousel.slide
-			// Carousel items
-			.carousel-inner
-				.item.active
-					.row
-						.col-sm-3
-							a(href='#x')
-								img.img-responsive(src='http://placehold.it/500x500', alt='Image')
-						.col-sm-3
-							a(href='#x')
-								img.img-responsive(src='http://placehold.it/500x500', alt='Image')
-						.col-sm-3
-							a(href='#x')
-								img.img-responsive(src='http://placehold.it/500x500', alt='Image')
-						.col-sm-3
-							a(href='#x')
-								img.img-responsive(src='http://placehold.it/500x500', alt='Image')
-					// /row
-				// /item
-				.item
-					.row
-						.col-sm-3
-							a.thumbnail(href='#x')
-								img.img-responsive(src='http://placehold.it/250x250', alt='Image')
-						.col-sm-3
-							a.thumbnail(href='#x')
-								img.img-responsive(src='http://placehold.it/250x250', alt='Image')
-						.col-sm-3
-							a.thumbnail(href='#x')
-								img.img-responsive(src='http://placehold.it/250x250', alt='Image')
-						.col-sm-3
-							a.thumbnail(href='#x')
-								img.img-responsive(src='http://placehold.it/250x250', alt='Image')
-					// /row
-				// /item
-				.item
-					.row
-						.col-sm-3
-							a.thumbnail(href='#x')
-								img.img-responsive(src='http://placehold.it/250x250', alt='Image')
-						.col-sm-3
-							a.thumbnail(href='#x')
-								img.img-responsive(src='http://placehold.it/250x250', alt='Image')
-						.col-sm-3
-							a.thumbnail(href='#x')
-								img.img-responsive(src='http://placehold.it/250x250', alt='Image')
-						.col-sm-3
-							a.thumbnail(href='#x')
-								img.img-responsive(src='http://placehold.it/250x250', alt='Image')
-					// /row
-				// /item
-			// /carousel-inner
-			a.left.carousel-control(href='#myCarousel', data-slide='prev') ‹
-			a.right.carousel-control(href='#myCarousel', data-slide='next') ›
+	.row
+		.col-xs-12.main-image
+			img(src="img/header-bg.jpg" width="100%")
 	.row
 		.col-lg-12.page-header.text-center
 				h2 ABOUT US
