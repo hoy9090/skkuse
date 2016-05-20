@@ -12,10 +12,13 @@ var users = require('./routes/users');
 //3d
 var three = require('./routes/three');
 
+var reg_product = require('./routes/reg_product');
+
 //specify directory for each jade file in here
 var app = express();
 app.use('/', routes);
 app.use('/users', users);
+app.use('/reg_product', reg_product);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
