@@ -1,4 +1,3 @@
-
 var express = require('express');
 var router = express.Router();
 var mysql = require('mysql');
@@ -9,7 +8,7 @@ var pool = mysql.createPool({
 });
 
 /* GET home page. */
-/*router.get('/', function(req, res, next) {
+router.get('/', function(req, res, next) {
 	pool.getConnection(function(err, conn) {
 		if (err)
 			console.error(err);
@@ -20,9 +19,9 @@ var pool = mysql.createPool({
 			}
 			console.log(err, result, field);
 			conn.release();
-			res.render('index', {data: result});
+			res.render('reg_product', {data: result});
 		});
 	});
-});*/
+});
 
 module.exports = router;
