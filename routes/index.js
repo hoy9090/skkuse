@@ -15,7 +15,7 @@ router.get('/', function(req, res, next) {
 		conn.query('use skkuse');
 		conn.query('select * from community', function(err, result, field) {
 			if (err) {
-				console.error(err);
+				console.error(err); 
 			}
 			console.log(err, result, field);
 			conn.release();
