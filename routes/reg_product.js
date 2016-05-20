@@ -9,7 +9,7 @@ var pool = mysql.createPool({
 });
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+/*router.get('/', function(req, res, next) {
 	pool.getConnection(function(err, conn) {
 		if (err)
 			console.error(err);
@@ -23,6 +23,6 @@ router.get('/', function(req, res, next) {
 			res.render('index', {data: result});
 		});
 	});
-});
+});*/
 
 module.exports = router;
