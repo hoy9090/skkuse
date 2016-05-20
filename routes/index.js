@@ -9,7 +9,7 @@ var pool = mysql.createPool({
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-	pool.getConnection(function(conn, err) {
+	pool.getConnection(function(err, conn) {
 		if (err)
 			console.error(err);
 		conn.query('use skkuse');
