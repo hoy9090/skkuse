@@ -23,30 +23,40 @@ html(lang='en')
       script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
       script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
     style.
-      nav.navbar.navbar-default.navbar-fixed-top {
-        background: #3A3A3A;
-      }
-      section {
-        padding: 0;
-      }
-
-    block css
+    nav.navbar.navbar-default.navbar-fixed-top {
+    background: #3A3A3A;
+    }
+    section {
+    padding: 0;
+    }
+    div.fixed{
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 20px;}
+    div.fixed.top{
+    font-size:10px;
+    }
+    div.fixed.product{
+    font-size: 14px;
+    }
   body#page-top.index
     // Navigation
     nav.navbar.navbar-default.navbar-fixed-top
+      .fixed.top
+        ul.nav.navbar-nav.navbar-right
+          li
+            a(href='#login') Login
+          li
+            a(href='#join') Join
+          li
+            a(href='#myPage') Mypage
+          li
+            a(href='#cart') Cart
+          li
+            a(href='#qna') QnA
+      // /.fixed-top-fluid
       .container
-        #bs-example-navbar-collapse-1.collapse.navbar-collapse
-          ul.nav.navbar-nav.navbar-right
-            li
-              a(href='#login') Login
-            li
-              a(href='#join') Join
-            li
-              a(href='#myPage') Mypage
-            li
-              a(href='#shoppingcart') Shopping Cart
-            li
-              a(href='#qna') QnA
         // Brand and toggle get grouped for better mobile display
         .navbar-header.page-scroll
           button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-2')
@@ -58,8 +68,6 @@ html(lang='en')
         // Collect the nav links, forms, and other content for toggling
         #bs-example-navbar-collapse-2.collapse.navbar-collapse
           ul.nav.navbar-nav.navbar-right
-            li.hidden
-              a(href='#page-top')
             li
               a.page-scroll(href='#store') Store
             li
@@ -68,20 +76,19 @@ html(lang='en')
               a.page-scroll(href='#cummunity2') cummunity2
             li
               a.page-scroll(href='#cummunity3') cummunity3
-        #bs-example-navbar-collapse-3.collapse.navbar-collapse
-          ul.nav.navbar-nav.navbar-left
-            li.hidden
-              a(href='#page-top')
-            li
-              a.page-scroll(href='#custom') Custom Product
-            li
-              a.page-scroll(href='#complete') Complete Product
-            li
-              a.page-scroll(href='#cleaning') Cleaning Product
-            li
-              a.page-scroll(href='#part') Part Component
-        // /.navbar-collapse
       // /.container-fluid
+      .fixed.product
+        ul.nav.navbar-nav.navbar-left
+          li
+            a(href='#custom') Custom Product
+          li
+            a(href='#complete') Complete Product
+          li
+            a(href='#cleaning') Cleaning Product
+          li
+            a(href='#part') Part Component
+      // /.fixed-product-fluid
+      // /.navbar-collapse
     // Header
     section
       block content
