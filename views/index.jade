@@ -5,46 +5,6 @@ block css
 		.main-image {
 			padding: 0;
 		}
-		#mainContent h1, #mainContent h2 {
-			/* Styling for main headings */
-			color: rgba(146,146,146,1.00);
-		}
-		#mainContent h3 {
-			/*Captions ot Taglines */
-			font-family: source-sans-pro, sans-serif;
-			font-style: normal;
-			font-weight: 200;
-			color: rgba(146,146,146,1.00);
-		}
-		#mainContent #bannerImage {
-			/*Container for main banner image */
-			width: 100%;
-			background-color: rgba(208,207,207,1.00);
-		}
-		#mainContent p {
-			/* All paragraphs under maincontent */
-			color: rgba(146,146,146,1.00);
-			font-family: source-sans-pro, sans-serif;
-			font-style: normal;
-			font-weight: 200;
-			text-align: justify;
-		}
-		#mainContent #authorInfo {
-			/* Author info section */
-			background-color: rgba(208,207,207,1.00);
-		}
-		#mainContent #authorInfo h2, #mainContent #authorInfo p {
-			color: rgba(255,255,255,1.00);
-			padding-left: 2%;
-			padding-top: 11px;
-		}
-		#mainContent #authorInfo p {
-			color: rgba(255,255,255,1.00);
-			padding-left: 2%;
-			padding-top: 0px;
-			padding-bottom: 11px;
-			padding-right: 2%;
-		}
 
 block content
 	.row
@@ -291,32 +251,18 @@ block content
 					br
 					a(href='mailto:#') first.last@example.com
 
-	.col-xs-12.community-list
-		each val in data
-			h6= val.serial_no
-			h6= val.title
-			h6= val.writter_SN
-			h6= val.date
-			h6= val.views
-	section#mainContent
-		//
-			************************************************************************
-			Main Blog content starts here
-			****************************************************************************
-		h1
-			// Blog title
-			| Post Title
-		h3
-			// Tagline
-			| SOME AWESOME HERO TAGLINE
-		#bannerImage
-			img(src='file:///C|/Users/jeffe/AppData/Roaming/Adobe/Dreamweaver CC 2015/ko_KR/Configuration/Temp/Assets/eamB079.tmp/BlogPostAssets/images/SliderLayerImage.png', alt='')
-		p
-			| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-		p
-			| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-		aside#authorInfo
-			// The author information is contained here
-			h2 Author Name
-			p
-				| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+	.row
+		table
+			thead
+				td No
+				td Title
+				td writter
+				td date
+				td views
+			tbody
+				each val in data
+					td= val.serial_no
+					td= val.title
+					td= val.writter_SN
+					td= val.date
+					td= val.views
