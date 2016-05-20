@@ -10,14 +10,60 @@ block content
 	.col-xs-12.main-image
 		img(src="img/header-bg.jpg" width="100%")
 	.col-xs-12.product-list
-		.col-xs-3
-			"product A"
-		.col-xs-3
-			"product B"
-		.col-xs-3
-			"product C"
-		.col-xs-3
-			"product D"
+		#myCarousel.carousel.slide
+      // Carousel items
+      .carousel-inner
+        .item.active
+          .row
+            .col-sm-3
+              a(href='#x')
+                img.img-responsive(src='http://placehold.it/500x500', alt='Image')
+            .col-sm-3
+              a(href='#x')
+                img.img-responsive(src='http://placehold.it/500x500', alt='Image')
+            .col-sm-3
+              a(href='#x')
+                img.img-responsive(src='http://placehold.it/500x500', alt='Image')
+            .col-sm-3
+              a(href='#x')
+                img.img-responsive(src='http://placehold.it/500x500', alt='Image')
+          // /row
+        // /item
+        .item
+          .row
+            .col-sm-3
+              a.thumbnail(href='#x')
+                img.img-responsive(src='http://placehold.it/250x250', alt='Image')
+            .col-sm-3
+              a.thumbnail(href='#x')
+                img.img-responsive(src='http://placehold.it/250x250', alt='Image')
+            .col-sm-3
+              a.thumbnail(href='#x')
+                img.img-responsive(src='http://placehold.it/250x250', alt='Image')
+            .col-sm-3
+              a.thumbnail(href='#x')
+                img.img-responsive(src='http://placehold.it/250x250', alt='Image')
+          // /row
+        // /item
+        .item
+          .row
+            .col-sm-3
+              a.thumbnail(href='#x')
+                img.img-responsive(src='http://placehold.it/250x250', alt='Image')
+            .col-sm-3
+              a.thumbnail(href='#x')
+                img.img-responsive(src='http://placehold.it/250x250', alt='Image')
+            .col-sm-3
+              a.thumbnail(href='#x')
+                img.img-responsive(src='http://placehold.it/250x250', alt='Image')
+            .col-sm-3
+              a.thumbnail(href='#x')
+                img.img-responsive(src='http://placehold.it/250x250', alt='Image')
+          // /row
+        // /item
+      // /carousel-inner
+      a.left.carousel-control(href='#myCarousel', data-slide='prev') ‹
+      a.right.carousel-control(href='#myCarousel', data-slide='next') ›
 	.col-xs-12.community-list
 		br
 		"aaa"
