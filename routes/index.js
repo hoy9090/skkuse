@@ -12,7 +12,7 @@ router.get('/', function(req, res, next) {
 	pool.getConnection(function(err, conn) {
 		if (err)
 			console.error(err);
-		conn.query('use skkuse');
+		conn.query('use board');
 		conn.query('select * from community', function(err, result, field) {
 			if (err) {
 				console.error(err); 
