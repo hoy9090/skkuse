@@ -19,7 +19,7 @@ router.get('/', function(req, res, next) {
 			}
 			console.log(err, result, field);
 			conn.release();
-			res.render('index');
+			res.render('index', {data: result});
 		});
 	});
 });
