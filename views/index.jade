@@ -256,9 +256,9 @@ block content
 					br
 					a(href='mailto:#') first.last@example.com
 	.col-xs-12.community-list
-		br
-		"aaa"
-		br
-		"bbb"
-		br
-		"ccc"
+		each val in data
+			h6= val.serial_no
+			h6= val.title
+			h6= val.writter_SN
+			h6= val.date
+			h6= val.views
