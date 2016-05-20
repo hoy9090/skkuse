@@ -252,17 +252,19 @@ block content
 					a(href='mailto:#') first.last@example.com
 
 	.row
-		table
-			thead
-				td No
-				td Title
-				td writter
-				td date
-				td views
-			tbody
-				each val in data
-					td= val.serial_no
-					td= val.title
-					td= val.writter_SN
-					td= val.date
-					td= val.views
+		.col-xs-12
+			table.table
+				thead
+					td No
+					td Title
+					td Writter
+					td Date
+					td Views
+				tbody
+					each val in data
+						tr
+							td= val.serial_no
+							td= val.title
+							td= val.writter_SN
+							td= val.date
+							td= val.views
