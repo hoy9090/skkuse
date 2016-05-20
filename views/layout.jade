@@ -34,29 +34,51 @@ html(lang='en')
     // Navigation
     nav.navbar.navbar-default.navbar-fixed-top
       .container
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='#login') Login
+            li
+              a(href='#join') Join
+            li
+              a(href='#myPage') Mypage
+            li
+              a(href='#shoppingcart') Shopping Cart
+            li
+              a(href='#qna') QnA
         // Brand and toggle get grouped for better mobile display
         .navbar-header.page-scroll
-          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-2')
             span.sr-only Toggle navigation
             span.icon-bar
             span.icon-bar
             span.icon-bar
           a.navbar-brand.page-scroll(href='#page-top') Start Bootstrap
         // Collect the nav links, forms, and other content for toggling
-        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+        #bs-example-navbar-collapse-2.collapse.navbar-collapse
           ul.nav.navbar-nav.navbar-right
             li.hidden
               a(href='#page-top')
             li
-              a.page-scroll(href='#services') Services
+              a.page-scroll(href='#store') Store
             li
-              a.page-scroll(href='#portfolio') Portfolio
+              a.page-scroll(href='#cummunity1') cummunity1
             li
-              a.page-scroll(href='#about') About
+              a.page-scroll(href='#cummunity2') cummunity2
             li
-              a.page-scroll(href='#team') Team
+              a.page-scroll(href='#cummunity3') cummunity3
+        #bs-example-navbar-collapse-3.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-left
+            li.hidden
+              a(href='#page-top')
             li
-              a.page-scroll(href='#contact') Contact
+              a.page-scroll(href='#custom') Custom Product
+            li
+              a.page-scroll(href='#complete') Complete Product
+            li
+              a.page-scroll(href='#cleaning') Cleaning Product
+            li
+              a.page-scroll(href='#part') Part Component
         // /.navbar-collapse
       // /.container-fluid
     // Header
