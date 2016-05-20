@@ -1,0 +1,21 @@
+extends layout
+
+block content
+	.row
+		.col-xs-12
+			table.table
+				thead.thead-inverse
+					tr
+						td No
+						td Title
+						td Writter
+						td Date
+						td Views
+				tbody
+					each val in data
+						tr
+							td(scope='row')= val.serial_no
+							td= val.title
+							td= val.writter_SN
+							td= val.date
+							td= val.views

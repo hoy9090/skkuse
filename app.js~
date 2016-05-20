@@ -9,7 +9,6 @@ var http = require('http');
 //add jade file here
 var routes = require('./routes/index');
 var users = require('./routes/users');
-var community_list = require('./routes/community_list');
 //3d
 var three = require('./routes/three');
 
