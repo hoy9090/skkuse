@@ -1,3 +1,4 @@
+
 var express = require('express');
 var router = express.Router();
 var mysql = require('mysql');
@@ -19,7 +20,7 @@ router.get('/', function(req, res, next) {
 			}
 			console.log(err, result, field);
 			conn.release();
-			res.render('index', {data: result});
+			res.render('search_product', {data: result});
 		});
 	});
 });

@@ -14,12 +14,15 @@ var community_list = require('./routes/community_list');
 var three = require('./routes/three');
 
 var reg_product = require('./routes/reg_product');
+var search_product = require('./routes/search_product');
 
 //specify directory for each jade file in here
 var app = express();
 app.use('/', routes);
 app.use('/users', users);
+
 app.use('/reg_product', reg_product);
+app.use('/search_product', search_product);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

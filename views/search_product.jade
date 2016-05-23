@@ -1,0 +1,25 @@
+extends layout
+
+block content
+
+	.row
+		.col-xs-12.main-image
+			img(src="img/header-bg.jpg" width = "100%")
+
+	.row.text-center
+		h2 Search Product
+
+	form(name = "search_form", method = "post")
+		div.input
+			span.label Title
+
+			h4(style = "text-align:center") Search : 
+				input(type = "text", name = "query")
+
+		//div.actions
+			input(type = "submit", name = "submit", value = "SEARCH")	
+
+
+	h3(style = "text-align:right") end of form
+	h5(style = "text-align:right") Why button causes error?
+	h5(style = "text-align:right") code line 19 

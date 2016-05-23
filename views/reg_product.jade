@@ -1,11 +1,59 @@
 extends layout
 
 block content
-	p
-	p
-	p
-	p
+	//p	this is first plain text input
+	//p	I am second plain text input
+	//p
+	//p
 
-	form.form
+	.row
+		.col-xs-12.main-image
+			img(src="img/header-bg.jpg" width="100%")
+
+
+	form(name = "test of form", method = "post")
+		div.input
+			span.label Title
+
+			.row.text-center
+				h2 Register a New Product
+
+			h4 Writer(make uneditable box)
+				input(type = "text", name = "writer")
+
+			//h4 product type
+				select(id = "sel1", name = "selfirst")
+					-for(var i = 0 ; i < 10 ; i++){
+					option(value="#{i}") some value for #{i}
+					-} 
+
+			h4 product type 
+				select(id = "sel_type", name = "type")
+					option(value = 1) Board(completed)
+					option(value = 2) Board parts
+					option(value = 3) others
+
+			h4 product type(detail-board parts)
+				select(id = "sel_type_2", name = "type2")
+					option(value = 1) Deck
+					option(value = 2) truck
+					option(value = 3) wheel
+
+			//make it unseen if not others
+			h4 product type(detail-others)
+				select(id = "sel_type_3", name = "type3")
+					option(value = 1) cleaner
+					option(value = 2) tools
+					option(value = 3) protector
+		div.input
+			span.label Content
+
+			h3 Description
+			textarea(name = "Content", cols = "120", rows = "25")
+
+		div.actions
+			input(type = "submit", name = "submit", value = "Register")
+
+//	form.form
 		input(type='text' name='testipt' width='100px')
 		input(type='submit' value='submit' width='30px')
